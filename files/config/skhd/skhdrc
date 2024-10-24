@@ -1,0 +1,23 @@
+# aerospace workspace
+alt + shift - 1: aerospace move-node-to-workspace 1 && aerospace workspace 1
+alt + shift - 2: aerospace move-node-to-workspace 2 && aerospace workspace 2
+alt + shift - 3: aerospace move-node-to-workspace 3 && aerospace workspace 3
+alt + shift - 4: aerospace move-node-to-workspace 4 && aerospace workspace 4
+alt + shift - 5: aerospace move-node-to-workspace 5 && aerospace workspace 5
+alt + shift - 6: aerospace move-node-to-workspace 6 && aerospace workspace 6
+alt + shift - 7: aerospace move-node-to-workspace 7 && aerospace workspace 7
+alt + shift - 8: aerospace move-node-to-workspace 8 && aerospace workspace 8
+alt + shift - 9: aerospace move-node-to-workspace 9 && aerospace workspace 9
+alt + shift - 0: aerospace move-node-to-workspace 0 && aerospace workspace 0
+
+# open app
+alt - j : open -a "/Applications/Alacritty.app"
+alt - n : open -a '/Applications/Visual Studio Code.app/'
+# alt - n : open -a '/Applications/Cursor.app'
+alt - u : open -a '/Applications/Google Chrome.app'
+# alt - u : open -a '/Applications/Arc.app'
+alt - k : open -a '/Applications/WeChat.app'
+alt - p : open -a '/Applications/Poe.app'
+alt - o : open -a '/Applications/Obsidian.app'
+alt - i : open -a '/Users/albert/Applications/Chrome Apps.localized/Excalidraw.app '
+alt - m : open -a '/Users/albert/Applications/Chrome Apps.localized/LobeChat.app'
