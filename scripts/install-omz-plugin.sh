@@ -3,6 +3,16 @@
 project_root="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/.."
 source "${project_root}/scripts/utils.sh"
 
+# check bash version
+function check_bash_version() {
+  if utils_check_bash_version ; then
+    return 0
+  fi
+
+  # if bash version is too low, exit now
+  return 1
+}
+
 # check and install oh-my-zsh
 function check_install_oh_my_zsh() {
   local oh_my_zsh_target_dir="${HOME}/.oh-my-zsh"
@@ -45,6 +55,6 @@ function check_install_oh_my_zsh_plugins() {
   return 0
 }
 
-
-check_install_oh_my_zsh \
+check_bash_version \
+  && check_install_oh_my_zsh \
   && check_install_oh_my_zsh_plugins
