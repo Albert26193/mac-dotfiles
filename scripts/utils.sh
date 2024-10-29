@@ -107,3 +107,26 @@ function utils_check_os() {
         ;;
     esac
 }
+
+###################################################
+# description: check zsh version
+#       input: none
+#      return: 0: success | 1: fail
+###################################################
+function utils_check_bash_version {
+    if ! command -v bash &>/dev/null; then
+        utils_print_red_line "Error: bash not found, please install bash first."
+        return 1
+    fi
+
+    local bash_version=$(bash --version | awk '{print $4}' | head -n 1)
+    local bash_version_major=$(echo $bash_version | cut -d. -f1)
+    local bash_version_minor=$(echo $bash_version | cut -d. -f2)
+
+    if [[ ${bash_version_major} -lt 4 ]] && [[ ${bash_version_minor} -lt 2 ]]; then
+        utils_print_red_line "Error: bash version must be greater than 4.2"
+        return 1
+    fi
+
+    return 0
+}

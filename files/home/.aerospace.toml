@@ -252,7 +252,7 @@ if.app-id = 'com.sangfor.Easyconnect'
 run = ['move-node-to-workspace 8']
 
 [[on-window-detected]]
-if.window-title-regex-substring = '(Clash Verge)'
+if.app-id = 'party.mihomo.app'
 run = ['move-node-to-workspace 8']
 
 [[on-window-detected]]

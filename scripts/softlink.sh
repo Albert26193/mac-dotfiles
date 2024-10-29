@@ -1,15 +1,15 @@
 #!/bin/bash
 
 # source utils functions
-git_root=$(git rev-parse --show-toplevel 2>/dev/null)
-source "${git_root}/scripts/utils.sh"
+project_root="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/.."
+source "${project_root}/scripts/utils.sh"
 
 ###################################################
 # description: link all dot files to target path
 #      return: nothing
 ###################################################
 function create_config_softlinks {
-	local dot_file_dirs="${git_root}/files"
+	local dot_file_dirs="${project_root}/files"
 	local home_dot_path="${dot_file_dirs}/home"
 	local home_dot_files=($(ls -al ${home_dot_path} | tail -n +4 | awk '{print $9}'))
 	local config_dot_path="${dot_file_dirs}/config"
@@ -87,9 +87,10 @@ function link_single_file {
 		utils_print_green_line "     path: "${target_file}""
 		utils_print_white_line "--------------------------------------"
 		if utils_yn_prompt "Do you want to overwrite it?"; then
-			mv "${target_file}" "${target_file}.backup"
+			local date_suffix="$(date +%Y-%m-%d-%s)"
+			mv "${target_file}" "${target_file}.backup.${date_suffix}"
 			utils_print_white "backup origin file to "
-			utils_print_info_line "${target_file}.backup"
+			utils_print_green_line "${target_file}.backup.${date_suffix}"
 		else
 			utils_print_white_line "Now, Exit..."
 			return 1
