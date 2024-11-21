@@ -28,6 +28,7 @@ alias "nv"="nvim"
 alias "pip"="pip3"
 alias "lg"="lazygit"
 alias "lc"="leetgo"
+alias "vsc"="open -a 'Visual Studio Code'"
 
 # ---------------------- brew ------------------
 export PATH=/opt/homebrew/bin:$PATH

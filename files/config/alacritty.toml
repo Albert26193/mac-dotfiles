@@ -134,7 +134,7 @@ background = "#282a36"
 style = "Block"
 
 [font]
-size = 14
+size = 15
 
 [font.bold]
 family = "FiraCode Nerd Font"

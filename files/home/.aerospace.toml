@@ -15,14 +15,15 @@ after-login-command = []
 after-startup-command = [
     # JankyBorders has a built-in detection of already running process,
     # so it won't be run twice on AeroSpace restart
-    'exec-and-forget sketchybar',
-    'exec-and-forget borders',
+    # 'exec-and-forget sketchybar',
+    # 'exec-and-forget borders',
 ]
 
 # Notify Sketchybar about workspace change
-exec-on-workspace-change = ['/bin/bash', '-c',
-  'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE'
-]
+# exec-on-workspace-change = ['/bin/bash', '-c',
+#   'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE'
+# ]
+exec-on-workspace-change = []
 
 # Start AeroSpace at login
 start-at-login = false
@@ -65,11 +66,11 @@ on-focus-changed = ['move-mouse window-lazy-center']
 #                 See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 
 [gaps]
-inner.horizontal = 8
-inner.vertical =   2
+inner.horizontal = 2
+inner.vertical =   0
 outer.left =       0
 outer.bottom =     0
-outer.top =        36
+outer.top =        0
 outer.right =      0
 
 # 'main' binding mode declaration
@@ -148,8 +149,8 @@ alt-0 = 'workspace 0'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
-alt-tab = 'workspace-back-and-forth'
-alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
+# alt-tab = 'workspace-back-and-forth'
+# alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 alt-shift-semicolon = 'mode service'
@@ -256,7 +257,7 @@ if.app-id = 'party.mihomo.app'
 run = ['move-node-to-workspace 8']
 
 [[on-window-detected]]
-if.app-id = 'com.tdesktop.Telegram'
+if.app-id = 'ru.keepcoder.Telegram'
 run = ['move-node-to-workspace 9']
 
 [[on-window-detected]]
