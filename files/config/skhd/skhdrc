@@ -19,5 +19,9 @@ alt - u : open -a '/Applications/Google Chrome.app'
 alt - k : open -a '/Applications/WeChat.app'
 alt - p : open -a '/Applications/Poe.app'
 alt - o : open -a '/Applications/Obsidian.app'
-alt - i : open -a '/Users/albert/Applications/Chrome Apps.localized/Excalidraw.app '
+alt - i : open -a '/Users/albert/Applications/Chrome Apps.localized/Excalidraw.app'
 alt - m : open -a '/Users/albert/Applications/Chrome Apps.localized/LobeChat.app'
+
+# aerospace move next and previous
+ctrl - right: aerospace workspace next
+ctrl - left: aerospace workspace prev
