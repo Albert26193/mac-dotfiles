@@ -72,3 +72,6 @@ unset __conda_setup
 
 #------------------- scripts  -------------------
 source ${HOME}/.albert-scripts/export.sh
+
+# Added by Windsurf
+export PATH="/Users/albert/.codeium/windsurf/bin:$PATH"
