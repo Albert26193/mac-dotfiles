@@ -23,7 +23,12 @@ after-startup-command = [
 # exec-on-workspace-change = ['/bin/bash', '-c',
 #   'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE'
 # ]
-exec-on-workspace-change = []
+# exec-on-workspace-change = []
+# change it to your path
+exec-on-workspace-change = ['/bin/bash', '-c',
+  '/Users/albert/.albert-scripts/snippets/aerospace-ws-change.sh'
+]
+
 
 # Start AeroSpace at login
 start-at-login = false
