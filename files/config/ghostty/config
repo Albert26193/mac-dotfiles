@@ -1,0 +1,29 @@
+# font
+font-family = FiraCode Nerd Font Mono
+font-size = 16.8
+
+# theme
+theme = Dracula
+
+# background
+# adjust-cell-height = 35%
+background-opacity = 0.90
+background-blur-radius = 40
+
+# mouse
+mouse-hide-while-typing = true
+mouse-scroll-multiplier = 2
+
+# window
+window-padding-balance = true 
+window-padding-x = 10
+window-padding-y = 10
+window-save-state = always
+macos-titlebar-style= transparent
+
+# other
+copy-on-select = clipboard
+
+# cursor
+cursor-style = block
+shell-integration-features = no-cursor

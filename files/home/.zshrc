@@ -75,3 +75,9 @@ source ${HOME}/.albert-scripts/export.sh
 
 # Added by Windsurf
 export PATH="/Users/albert/.codeium/windsurf/bin:$PATH"
+
+
+# Added by Windsurf
+export PATH="/Users/albert/.codeium/windsurf/bin:$PATH"
+export PATH="/Library/TeX/texbin:$PATH"
+# export Path="/Library/TeX/texbin:$PATH"
