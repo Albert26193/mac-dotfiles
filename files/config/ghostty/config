@@ -7,7 +7,7 @@ theme = Dracula
 
 # background
 # adjust-cell-height = 35%
-background-opacity = 0.90
+background-opacity = 0.9
 background-blur-radius = 40
 
 # mouse
