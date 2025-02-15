@@ -27,3 +27,5 @@ copy-on-select = clipboard
 # cursor
 cursor-style = block
 shell-integration-features = no-cursor
+cursor-color = #fafafa
+cursor-opacity = 0.99

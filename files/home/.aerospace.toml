@@ -187,7 +187,11 @@ if.app-id = 'com.tencent.xinWeChat'
 run = ['move-node-to-workspace 9']
 
 [[on-window-detected]]
-if.window-title-regex-substring = '(setting|设置)'
+if.app-id = '(setting|设置)'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'Kando'
 run = 'layout floating'
 
 [[on-window-detected]]
@@ -199,35 +203,32 @@ if.window-title-regex-substring = '(Picture-in-Picture|画中画)'
 run = 'layout floating'
 
 [[on-window-detected]]
-if.app-id = 'org.alacritty'
-run = ['move-node-to-workspace 0']
-
-[[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'
-run = ['move-node-to-workspace 0']
+run = ['move-node-to-workspace 1']
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.VSCode'
-run = ['move-node-to-workspace 1']
+run = ['move-node-to-workspace 2']
 
 [[on-window-detected]]
 if.app-id = 'com.exafunction.windsurf'
-run = ['move-node-to-workspace 1']
+run = ['move-node-to-workspace 2']
 
 [[on-window-detected]]
+if.app-id = 'com.microsoft.VSCode'
+run = ['move-node-to-workspace 2']
+
+# cursor
+[[on-window-detected]]
 if.app-id = 'com.todesktop.230313mzl4w4u92'
-run = ['move-node-to-workspace 1']
+run = ['move-node-to-workspace 3']
 
 [[on-window-detected]]
 if.app-id = 'com.google.Chrome'
-run = ['move-node-to-workspace 2']
+run = ['move-node-to-workspace 3']
 
 [[on-window-detected]]
 if.app-id = 'company.thebrowser.Browser'
-run = ['move-node-to-workspace 2']
-
-[[on-window-detected]]
-if.app-id = 'com.quora.poe.electron'
 run = ['move-node-to-workspace 3']
 
 [[on-window-detected]]
@@ -237,6 +238,10 @@ run = ['move-node-to-workspace 4']
 [[on-window-detected]]
 if.app-id = 'notion.id'
 run = ['move-node-to-workspace 4']
+
+[[on-window-detected]]
+if.app-id = 'com.quora.poe.electron'
+run = ['move-node-to-workspace 5']
 
 [[on-window-detected]]
 if.window-title-regex-substring = '(阿里云盘)'
@@ -284,4 +289,16 @@ run = ['move-node-to-workspace 9']
 
 [[on-window-detected]]
 if.app-id = 'com.tencent.xinWeChat'
-run = ['move-node-to-workspace 9']
+run = ['move-node-to-workspace 0']
+
+[workspace-to-monitor-force-assignment]
+1 = '^(?!.*built-in).*$'
+2 = '^(?!.*built-in).*$'
+3 = '^(?!.*built-in).*$'
+4 = '^(?!.*built-in).*$'
+5 = '^(?!.*built-in).*$'
+6 = '^(?!.*built-in).*$'
+7 = '^(?!.*built-in).*$'
+8 = '^(?!.*built-in).*$'
+9 = 'built-in' # Case insensitive regex substring
+0 = 'built-in' # Case insensitive regex substring
