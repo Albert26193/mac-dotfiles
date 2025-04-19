@@ -18,10 +18,10 @@ alt - l : open -a '/Applications/Windsurf.app'
 alt - r : open -a '/Applications/Cursor.app/'
 alt - u : open -a '/Applications/Google Chrome.app'
 alt - k : open -a '/Applications/WeChat.app'
-alt - p : open -a '/Users/albert/Applications/Chrome Apps.localized/Plane.app'
+# alt - p : open -a '/Users/albert/Applications/Chrome Apps.localized/Plane.app'
 alt - o : open -a '/Applications/Obsidian.app'
 alt - i : open -a '/Users/albert/Applications/Chrome Apps.localized/Excalidraw.app'
-alt - m : open -a '/Users/albert/Applications/Chrome Apps.localized/LobeChat.app'
+alt - m : open -a '/Applications/Cherry Studio.app/'
 
 # aerospace move next and previous
 ctrl - right: aerospace workspace next

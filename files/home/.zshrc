@@ -76,13 +76,5 @@ source ${HOME}/.albert-scripts/export.sh
 # Added by Windsurf
 export PATH="/Users/albert/.codeium/windsurf/bin:$PATH"
 
-
-# Added by Windsurf
-export PATH="/Users/albert/.codeium/windsurf/bin:$PATH"
-export PATH="/Library/TeX/texbin:$PATH"
-
 # nvim
-#export NVIM_APPNAME=lazyvim-config
-
-# export Path="/Library/TeX/texbin:$PATH"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVIM_APPNAME=lazyvim-config
