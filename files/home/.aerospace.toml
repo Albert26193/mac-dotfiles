@@ -43,12 +43,13 @@ enable-normalization-opposite-orientation-for-nested-containers = false
 accordion-padding = 0
 
 # Possible values: tiles|accordion
-default-root-container-layout = 'accordion'
+# default-root-container-layout = 'accordion'
+default-root-container-layout = 'tiles'
 
 # Possible values: horizontal|vertical|auto
 # 'auto' means: wide monitor (anything wider than high) gets horizontal orientation,
 #               tall monitor (anything higher than wide) gets vertical orientation
-#default-root-container-orientation = 'horizontal'
+# default-root-container-orientation = 'horizontal'
 default-root-container-orientation = 'vertical'
 
 # Possible values: (qwerty|dvorak)
